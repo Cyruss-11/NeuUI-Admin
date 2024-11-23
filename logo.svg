@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" viewBox="0 0 200 40">
+  <defs>
+    <!-- 定义渐变色 -->
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#67b26f"/>
+      <stop offset="100%" style="stop-color:#4ca2cd"/>
+    </linearGradient>
+    
+    <!-- 定义内阴影滤镜 -->
+    <filter id="innerShadowLogo" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1" result="blur"/>
+      <feOffset dx="1" dy="1" result="offsetBlur"/>
+      <feComposite in="SourceAlpha" in2="offsetBlur" operator="out"/>
+      <feFlood flood-color="#babecc" flood-opacity="0.5" result="color"/>
+      <feComposite in="color" in2="SourceAlpha" operator="in"/>
+      <feComposite in="SourceGraphic" result="shadow"/>
+    </filter>
+    
+    <!-- 定义外阴影滤镜 -->
+    <filter id="outerShadowLogo" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1"/>
+      <feOffset dx="-1" dy="-1" result="offsetblur"/>
+      <feFlood flood-color="#ffffff" flood-opacity="0.8"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Logo图标部分 -->
+  <g transform="translate(5,5)">
+    <rect x="0" y="0" width="30" height="30" rx="8" 
+          fill="#e0e5ec" 
+          filter="url(#outerShadowLogo)"/>
+    <path d="M8 6v18h3v-12l8 12h3v-18h-3v12l-8-12z" 
+          fill="url(#logoGradient)"
+          filter="url(#innerShadowLogo)"/>
+  </g>
+  
+  <!-- 文字部分 -->
+  <g transform="translate(45,25)">
+    <text font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#566a88">
+      <tspan>NeuUI</tspan>
+      <tspan fill="#4ca2cd">-Admin</tspan>
+    </text>
+  </g>
+</svg> 
