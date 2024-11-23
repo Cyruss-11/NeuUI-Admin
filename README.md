@@ -6,6 +6,7 @@
 
 <p align="center">
     <img src="https://img.shields.io/badge/Bootstrap-5.1.3-blue" alt="Bootstrap Version">
+    <img src="https://img.shields.io/badge/NeuUI-1.0.0-purple" alt="NeuUI Version">
     <img src="https://img.shields.io/badge/jQuery-3.6.0-yellowgreen" alt="jQuery Version">
     <img src="https://img.shields.io/badge/License-MIT-green" alt="License">
 </p>
@@ -61,18 +62,35 @@
    - 柔和的色彩过渡
    - 细腻的交互反馈
    - 多层次的立体感
+   - 自适应亮度调节
 
-2. **登录页面特色**
+2. **NeuUI 1.0.0 特性**
+   - 完整的拟态设计系统
+   - 可复用的组件库
+   - 优化的动画效果
+   - 灵活的主题定制
+   - 丰富的设计变量
+
+3. **登录页面特色**
    - 三种精美登录界面
    - 渐变动画效果
    - 自适应布局设计
    - 表单验证交互
+   - 多样化的背景效果
 
-3. **主题定制**
+4. **主题定制**
    - 8种预设主题配色
    - 可自定义主题色
    - 支持深色/浅色模式
    - 一键切换主题
+   - 实时预览效果
+
+5. **用户体验**
+   - 流畅的动画过渡
+   - 直观的操作反馈
+   - 优化的加载状态
+   - 友好的错误提示
+   - 完善的帮助文档
 
 ## 📦 安装使用
 
